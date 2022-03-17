@@ -1,0 +1,70 @@
+.trending {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.parentDiv {
+  font-family: "Noto Sans";
+  position: relative  ;
+  width: 100%;
+  background: none;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 5px;
+  cursor: pointer;
+  padding: 0 8px;
+  font-size: 50px;
+}
+.nav {
+  /* text-align: center; */
+  font-size: 22px;
+}
+
+button.text-button {
+  background: none;
+  border: none;
+  border-radius: 0;
+  
+}
+ul li {
+  display: inline-block;
+  padding: 0 5px;
+}
+li:hover {
+  border-bottom: 2px solid #e43972;
+}
+.extra{
+  float: left;
+  /* display: inline-block; */
+  min-height:20rem;
+  width: 17rem;
+  padding: 5px;
+  border-radius: 50%;
+  /* text-align: center;
+  margin-left: 2rem; */
+  /* margin: auto;
+  display: block; */
+  display: flex;
+  justify-content: center;
+}
+.item{
+  min-height:20rem;
+  width: 17rem;
+  padding: 5px;
+}
+
+item img{
+  border-radius: 50%;
+  pointer-events: none;
+
+}
+.inner-carousel{
+  display: flex;
+  background:rgb(255, 255, 255);
+}
+.carousel{
+  cursor:grab;
+  overflow:hidden;
+  background: rgb(255, 255, 255);
+}
