@@ -8,15 +8,12 @@ const SubCategory = () => {
   const [image, setImage] = useState([]);
   const [filtered, setFiltered] = useState([]);
   const [category, setCategory] = useState(0);
-  //const [width, setWidth] = useState(0);
- // const carousel = useRef();
+  
   useEffect(() => {
     setImage(img);
     setFiltered(img);
   }, []);
-  // useEffect(() => {
-  //   setWidth(carousel.current.scrollWidth - carousel.current.offsetWidth);
-  // }, []);
+  ;
 
   return (
     <div>

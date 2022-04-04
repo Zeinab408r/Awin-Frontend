@@ -31,12 +31,13 @@
   min-height:20rem;
   width: 17rem;
   padding: 5px;
+  
 }
 
 item img{
   border-radius: 50%;
   pointer-events: none;
-
+ 
 }
 .inner-carousel{
   display: flex;
