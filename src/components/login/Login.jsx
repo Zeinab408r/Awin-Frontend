@@ -1,11 +1,11 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import {
   
-  faFacebook,
-  faTwitter,
-  faGoogle,
-} from "@fortawesome/free-brands-svg-icons";
+//   faFacebook,
+//   faTwitter,
+//   faGoogle,
+// } from "@fortawesome/free-brands-svg-icons";
 import "./Login.css";
 
 
@@ -49,28 +49,28 @@ const FormInput = (props) => (
 const OtherMethods = props => (
        <div id="alternativeLogin">
          <label>Or sign in with:</label>
-         <div id="iconGroup">
+         {/* <div id="iconGroup">
            <Facebook />
            <Twitter />
            <Google />
-         </div>
+         </div> */}
        </div>
      );
      
-     const Facebook = props => (
-       <a href="https://www.facebook.com" id="facebookIcon">
-       <FontAwesomeIcon icon={faFacebook} size="2x" />
-     </a>);
+    //  const Facebook = props => (
+    //    <a href="https://www.facebook.com" id="facebookIcon">
+    //    {/* <FontAwesomeIcon icon={faFacebook} size="2x" /> */}
+    //  </a>);
      
-     const Twitter = props => (
-       <a href="https://www.facebook.com" id="twitterIcon">
-       <FontAwesomeIcon icon={faTwitter} size="2x" /></a>
-     );
+    //  const Twitter = props => (
+    //    <a href="https://www.facebook.com" id="twitterIcon">
+    //    {/* <FontAwesomeIcon icon={faTwitter} size="2x" /></a> */}
+    //  );
      
-     const Google = props => (
-       <a href="https://www.facebook.com" id="googleIcon">
-       <FontAwesomeIcon icon={faGoogle} size="2x" /></a>
-     );
+    //  const Google = props => (
+    //    <a href="https://www.facebook.com" id="googleIcon">
+    //    {/* <FontAwesomeIcon icon={faGoogle} size="2x" /></a> */}
+    //  );
      
 
 export default Login;

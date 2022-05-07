@@ -1,16 +1,16 @@
-import { useEffect } from "react";
-import "./SubCategory.css";
-import Button from "@material-ui/core/Button";
-import { makeStyles } from "@material-ui/core/styles";
+import { useEffect } from 'react';
+import './SubCategory.css';
+import Button from '@material-ui/core/Button';
+import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
   button: {
     margin: theme.spacing(1),
-    borderRadius: "5em",
-    textTransform: "lowercase",
+    borderRadius: '5em',
+    textTransform: 'lowercase',
   },
   input: {
-    display: "none",
+    display: 'none',
   },
 }));
 const Filter = ({ image, setCategory, setFiltered, category }) => {
@@ -29,7 +29,7 @@ const Filter = ({ image, setCategory, setFiltered, category }) => {
       <Button
         className={classes.button}
         variant="contained"
-        color="white"
+        color= "default"
         onClick={() => setCategory(0)}
       >
         All

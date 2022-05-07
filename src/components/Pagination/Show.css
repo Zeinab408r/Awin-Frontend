@@ -1,6 +1,10 @@
-
+* {
+  text-align: center;
+ 
+}
 .username {
   width: 200px;
+  color: rgb(13, 13, 13);
 }
 
 .row {

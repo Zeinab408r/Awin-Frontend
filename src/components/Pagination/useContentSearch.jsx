@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import axios from 'axios'
 
 export default function useContentsearch(query, pageNumber) {
-       const [image, setImage] = useState("dog");
+       const [image, setImage] = useState("cake");
   const clientId = "viyDF3eUM7UyGboYfR9ySQN7kxMVGdfngRyqLy5FNdg";
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(false)

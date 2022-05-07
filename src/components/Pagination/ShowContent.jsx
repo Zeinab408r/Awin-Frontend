@@ -38,7 +38,7 @@ export default function ShowContent() {
         {contents.map((content, index) => {
           if (contents.length === index + 1) {
             return (
-              <div className="column" ref={lastContentElementRef} key={content}  >
+              <div className="column" ref={lastContentElementRef} key={index}  >
                 <img   src={content.urls.thumb} width="250" height="200"/>
                 <p className="username"> Photo by {content.user.name}</p>
                 
@@ -46,7 +46,7 @@ export default function ShowContent() {
             );
           } else {
             return (
-              <div className="column" key={content}>
+              <div className="column" key={index}>
                <img src={content.urls.thumb} width="250" height="200"/>
                 <p className="username"> Photo by {content.user.name}</p>
                

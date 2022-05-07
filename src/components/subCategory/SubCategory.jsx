@@ -13,7 +13,7 @@ const SubCategory = () => {
     setImage(img);
     setFiltered(img);
   }, []);
-  ;
+  
 
   return (
     <div>
