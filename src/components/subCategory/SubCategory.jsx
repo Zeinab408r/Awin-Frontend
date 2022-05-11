@@ -1,41 +1,65 @@
-import { img } from "./SubCategoryData";
-import { useState, useEffect, useRef } from "react";
-import Image from "./Image";
-import Filter from "./Filter";
-import { motion } from "framer-motion";
+import ShowProduct from "./ShowProduct";
 
 const SubCategory = () => {
-  const [image, setImage] = useState([]);
-  const [filtered, setFiltered] = useState([]);
-  const [category, setCategory] = useState(0);
-  
-  useEffect(() => {
-    setImage(img);
-    setFiltered(img);
-  }, []);
-  
+  // const [filtered, setFiltered] = useState([]);
+  // const [category, setCategory] = useState(0);
+  // const [result, setResult] = useState([]);
+  // const [womenProduct, setWomenProduct] = useState([]);
+  // const [ovenProduct, setOvenProduct] = useState([]);
+  // const url =
+  //   'https://project1.safe-stream.com/api/product/?offset=200';
+  // const url2 =
+  //   ' https://project1.safe-stream.com/api/product/?offset=2200';
+  // // let endpoints = [
+  // //   'https://project1.safe-stream.com/api/product/?offset=200',
+  // //   ' https://project1.safe-stream.com/api/product/?offset=2200',
+  // // ];
+
+  // useEffect(() => {
+  //   //getAllProduct();
+  //   getOvenProduct();
+  //   setWomenProduct();
+    
+  // }, []);
+
+  // // const getAllProduct = async () => {
+  // //   axios
+  // //     .all(endpoints.map((endpoint) => axios.get(endpoint)))
+  // //     .then((response) => {
+  // //       console.log(response);
+  // //       // setResult(response.data.results);
+  // //       // setFiltered(response.data.results);
+  // //     });
+  // // };
+  // const getOvenProduct = async () => {
+  //   await axios
+  //     .get(url)
+  //     .then((response) => {
+  //       console.log(response);
+
+  //       setOvenProduct(response.data.results);
+  //     })
+  //     .catch((err) => {
+  //       console.log(err);
+  //     });
+  // };
+  // const getWomanProduct = async () => {
+  //   await axios
+  //     .get(url2)
+  //     .then((response) => {
+  //       console.log(response);
+
+  //       setWomenProduct(response.data.results);
+  //     })
+  //     .catch((err) => {
+  //       console.log(err);
+  //     });
+  // };
 
   return (
-    <div>
-      <Filter
-        image={image}
-        setFiltered={setFiltered}
-        setCategory={setCategory}
-        category={category}
-      />
-
-      <motion.div className="carousel">
-        <motion.div
-          drag="x"
-          dragConstraints={{ right: 0 }}
-          className="inner-carousel"
-        >
-          {filtered.map((item, index) => {
-            return <Image key={index} item={item} />;
-          })}
-        </motion.div>
-      </motion.div>
-    </div>
+    <>
+      <ShowProduct/>
+    </>
   );
 };
 

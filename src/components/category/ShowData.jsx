@@ -15,7 +15,7 @@ import { red } from '@material-ui/core/colors';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import ShareIcon from '@material-ui/icons/Share';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
-
+import Link from '@material-ui/core/Link';  
 const useStyles = makeStyles((theme) => ({
   root: {
     maxWidth: 345,
@@ -58,38 +58,37 @@ const ShowData = ({ item }) => {
                 <MoreVertIcon />
               </IconButton>
             }
-            title={item.user.name}
             subheader="September 14, 2016"
           />
-          <CardMedia
-            className={classes.media}
-            image={item.urls.thumb}
-            title={item.user.name}
-            width="250"
-            height="250"
-          />
-          <CardContent>
-            <Typography
-              variant="body2"
-              color="textSecondary"
-              component="p"
-            >
-              This impressive paella is a perfect party dish and a fun
-              meal to cook together with your guests. Add 1 cup of
-              frozen peas along with the mussels, if you like.
-            </Typography>
-          </CardContent>
-          <CardActions disableSpacing>
-            <IconButton aria-label="add to favorites">
-              <FavoriteIcon />
+          <Link href={item.awin_deep_link} key={item.id}>
+            <CardMedia
+              className={classes.media}
+              image={item.image_url}
+              title={item.name}
               
-            </IconButton>
-            <IconButton aria-label="share">
-              <ShareIcon />
-            </IconButton>
-          </CardActions>
-
-          <CardContent></CardContent>
+              width="250"
+              height="250"
+            /> </Link>
+            <CardContent>
+              <Typography
+                variant="body2"
+                color="textSecondary"
+                component="p"
+              >
+                This impressive paella is a perfect party dish and a
+                fun meal to cook together with your guests. Add 1 cup
+                of frozen peas along with the mussels, if you like.
+              </Typography>
+            </CardContent>
+            <CardActions disableSpacing>
+              <IconButton aria-label="add to favorites">
+                <FavoriteIcon />
+              </IconButton>
+              <IconButton aria-label="share">
+                <ShareIcon />
+              </IconButton>
+            </CardActions>
+         
         </Card>
         ;
       </motion.div>
@@ -98,10 +97,10 @@ const ShowData = ({ item }) => {
 };
 export default ShowData;
 
-
-
-{/* <div>
+{
+  /* <div>
   <motion.div className="item">
     <img src={item.urls.thumb} alt="" width="250" height="250" />
   </motion.div>
-</div>; */}
+</div>; */
+}

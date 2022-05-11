@@ -34,21 +34,21 @@ export default function ShowContent() {
   return (
     <>
       {/* <input type="text" value={query} onChange={handleSearch}></input> */}
-      <div className="row">
+      <div >
         {contents.map((content, index) => {
           if (contents.length === index + 1) {
             return (
-              <div className="column" ref={lastContentElementRef} key={index}  >
-                <img   src={content.urls.thumb} width="250" height="200"/>
-                <p className="username"> Photo by {content.user.name}</p>
+              <div className="gallery" ref={lastContentElementRef} key={index}  >
+                <img   src={content.image_url} width="250" height="250"/>
+                <p className="dec "> Photo by </p>
                 
               </div>
             );
           } else {
             return (
-              <div className="column" key={index}>
-               <img src={content.urls.thumb} width="250" height="200"/>
-                <p className="username"> Photo by {content.user.name}</p>
+              <div  className="gallery" key={index}>
+               <img  src={content.image_url} width="250" height="250"/>
+                <p className="dec "> Photo by </p>
                
               </div>
             );

@@ -8,7 +8,7 @@ const Filter = ({ result, setCategory, setFiltered, category ,carousel,setWidth}
       return;
     }
     const filtered = result.filter(
-      (item) => item.likes % 2 === category
+      (item) => item.id % 2 === category
     );
     console.log(filtered);
     setFiltered(filtered);
